@@ -11,7 +11,7 @@ function getQueryParams() {
   async function fetchMovieDetails(movieId) {
     try {
       const response = await fetch(
-        `https://movie-details-data.onrender.com/movie/get-movies${movieId}`);
+        `https://localhost:8000/movie/get-movies${movieId}`);
       const movie = await response.json();
   
       // Object.entries(movie.shows).flatMap(([date,showtime]) => {
